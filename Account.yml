@@ -4,12 +4,7 @@ spring:
     username: system
     password: hr
     driver-class-name: oracle.jdbc.driver.OracleDriver
-  cloud:
-    bus:
-      enabled: true
-      kafka:
-        binder:
-          brokers: ${KAFKA_BROKERS:localhost:9092}
+
 server:
   port: ${port}
 eureka:
