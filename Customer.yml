@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: Customer
+  datasource:
+    url: {url}
+    username: {username}
+    password: {password}
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+server:
+  port: {port}
+eureka:
+  client:
+    service-url:
+      defaultZone: {eureka_url}
+    register-with-eureka: true
+    fetch-registry: true
+  instance:
+    prefer-ip-address: true
