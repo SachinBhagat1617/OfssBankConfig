@@ -1,0 +1,13 @@
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+eureka:
+  client:
+    service-url:
+      defaultZone: ${eureka_url}
+    register-with-eureka: true
+    fetch-registry: true
+server:
+  port: ${port}
