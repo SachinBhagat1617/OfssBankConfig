@@ -1,15 +1,21 @@
 spring:
   datasource:
-    url: {url}
-    username: {username}
-    password: {password}
+    url: ${url}
+    username: ${username}
+    password: ${password}
     driver-class-name: oracle.jdbc.driver.OracleDriver
+  cloud:
+    bus:
+      enabled: true
+      kafka:
+        binder:
+          brokers: ${KAFKA_BROKERS:localhost:9092}
 server:
-  port: {port}
+  port: ${port}
 eureka:
   client:
     service-url:
-      defaultZone: {eureka_url}
+      defaultZone: ${eureka_url}
     register-with-eureka: true
     fetch-registry: true
   instance:
