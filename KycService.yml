@@ -10,6 +10,9 @@ spring:
       kafka:
         binder:
           brokers: ${KAFKA_BROKERS:localhost:9092}
+  kafka:
+    consumer:
+      group-id: kyc-service-group
 server:
   port: ${port}
 eureka:
