@@ -1,8 +1,8 @@
 spring:
   datasource:
-    url: jdbc:oracle:thin:@localhost:1521:Account
-    username: system
-    password: hr
+    url: ${url}
+    username: ${username}
+    password: ${password}
     driver-class-name: oracle.jdbc.driver.OracleDriver
   cloud:
     bus:
@@ -16,7 +16,7 @@ server:
 eureka:
   client:
     service-url:
-      defaultZone: http://localhost:8761/eureka
+      defaultZone: {eureka_url}
     register-with-eureka: true
     fetch-registry: true
   instance:
