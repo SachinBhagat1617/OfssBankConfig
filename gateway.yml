@@ -10,4 +10,4 @@ eureka:
     register-with-eureka: true
     fetch-registry: true
 server:
-  port: ${SERVER_PORT}
+  port: 5080
