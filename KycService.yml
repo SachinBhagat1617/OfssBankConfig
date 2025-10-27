@@ -11,7 +11,7 @@ spring:
         binder:
           brokers: ${KAFKA_BROKERS:localhost:9092}
 server:
-  port: ${SERVER_PORT}
+  port: ${port}
 eureka:
   client:
     service-url:
